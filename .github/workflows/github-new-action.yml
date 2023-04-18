@@ -15,10 +15,10 @@ jobs:
         id: hello-action
         uses: ./hello-world-docker-action
         with:
-          who-to-greet: "jai mata di"
+          who-to-greet: 'jai mata di'
           
       - name: Output time from contianer
-        run: echo "time from container is  ${{ steps.hello-action.outputs.time}} when the action said anything"
+        run: echo 'time from container is  ${{ steps.hello-action.outputs.time}} when the action said anything'
         
       
         
