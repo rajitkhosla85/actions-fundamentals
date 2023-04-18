@@ -1,0 +1,9 @@
+name: My RK 
+
+on: [push,pull_request]
+
+jobs:
+  hello-world:
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "Hello World"
