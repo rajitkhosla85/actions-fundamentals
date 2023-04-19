@@ -10,14 +10,14 @@ on:
 jobs:
   test-job:
     runs-on: ubuntu-latest
-    if: github.event_name == "workflow_dispatch"
+    if: github.event_name == 'workflow_dispatch'
     environment: test
     
     steps:
     - run: echo "🧪 Testing..."
   load-test-job:
     runs-on: ubuntu-latest
-    if: github.event_name == "workflow_dispatch"
+    if: github.event_name == 'workflow_dispatch'
     environment: load-test
     
     steps:
