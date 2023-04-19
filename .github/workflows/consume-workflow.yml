@@ -1,4 +1,4 @@
-name: Reuse the workflow
+name: Consume the reusable workflow
 on:
  workflow_dispatch:
  
