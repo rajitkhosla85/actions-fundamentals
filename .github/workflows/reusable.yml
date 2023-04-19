@@ -7,12 +7,13 @@ on:
       type: string
       required: true
       default: World
-   outputs:
-      current-time: ${{ steps.time.outputs.time }}
+
       
 jobs:
   reusable-job:
     runs-on: ubuntu-latest
+    outputs:
+      current-time: ${{ steps.time.outputs.time }}
     steps:
       - name: Greet someone
         run: echo "Hello ${{ inputs.who-to-greet }}"
